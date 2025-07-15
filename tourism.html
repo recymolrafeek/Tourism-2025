@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main >
+        <nav class="navbar">
+            <img src="images/kerala-tourism-logo.png" alt="Logo">
+                    
+            <button class="navbar-toggler" aria-label="Toggle navigation">
+                ☰
+            </button> 
+            <ul class="navbar-links">
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#">Districts</a></li>
+                <li class="nav-link"><a href="#">About Us</a></li>
+                <li class="nav-link"><button class="nav-btn"><a href="#">Login</a></button></li>
+                <li class="nav-link"><button class="nav-btn"><a href="#">Sign Up</a></button></li>
+            </ul>
+
+        </nav>
+      
+        <section id="hero-text">
+            <h1>COME AND ENJOY<br> OUR CULTURE</h1>
+            <a href="#" class="learn-more btn">Learn More</a>
+            <a href="#" class="contact-btn btn">Contact</a>
+        </section>
+    </main>
+    <hr>
+<div class="container">
+    <h1>Top Destinations</h1>
+    <section class="destinations">
+        <article>
+            <img src="images/bekal-fort.jpg" alt="Bekal Fort">
+            <p>Bekal Fort</p>
+        </article>
+
+        <article>
+            <img src="images/illickal.jpg" alt="Illickal Kallu">
+            <p>Illickal Kallu</p>
+        </article>
+
+        <article>
+            <img src="images/kollukkumallay.jpg" alt="Kolukkumalai ">
+            <p>Kolukkumalai</p>
+        </article>
+
+        <article>
+            <img src="images/periyar.jpg" alt="Periyar">
+            <p>Periyar</p>
+        </article>
+    </section>
+
+    <hr>
+
+    <section class="container">
+        <h1>About Kerala</h1>
+        <img id="kerala" src="images/kerala.jpg" alt="">
+           </section>
+
+    <section class="districts">
+        <h1>Our Districts</h1>
+        <ol>
+            <li><a href="#">Alappuzha</a></li>
+            <li><a href="#">Ernakulam</a></li>
+            <li><a href="#">Idukki</a></li>
+            <li><a href="#">Kannur</a></li>
+            <li><a href="#">Kasaragod</a></li>
+            <li><a href="#">Kollam</a></li>
+            <li><a href="#">Kottayam</a></li>
+            <li><a href="#">Kozhikode</a></li>
+            <li><a href="#">Malappuram</a></li>
+            <li><a href="#">Palakkad</a></li>
+            <li><a href="#">Pathanamthitta</a></li>
+            <li><a href="#">Thiruvananthapuram</a></li>
+            <li><a href="#">Thrissur</a></li>
+            <li><a href="#">Wayanad</a></li>
+        </ol>
+        
+    </section>
+    
+</div>
+<div class="container form-container">
+    <form id="enquiryForm" action="#">
+        <h1>Enquiry for Booking </h1>
+        <input type="text" placeholder="Name" name="name" id="name" maxlength="20" pattern="[a-zA-Z\s]{1,20}" required>
+         <small class="error" id="nameError" style="color:red"></small>
+        <br><br>
+
+        <input type="email" placeholder="Email" name="email" id="email" required>
+         <small class="error" id="emailError" style="color:red"></small>
+        <br><br>
+        <input type="tel" placeholder="Number" name="phone" id="phone" pattern="\d{10}" required><br><br>
+        <select name="districts" class="districts" >
+            <option value="">Alappuzha</option>
+            <option value="">Ernakulam</option>
+            <option value="">Idukki</option>
+            <option value="">Kannur</option>
+            <option value="">Kasaragod</option>
+            <option value="">Kollam</option>
+            <option value="">Kottayam</option>
+            <option value="">Kozhikode</option>
+            <option value="">Malappuram</option>
+            <option value="">Palakkad</option>
+            <option value="">Pathanamthitta</option>
+            <option value="">Thiruvananthapuram</option>
+            <option value="">Thrissur</option>
+            <option value="">Wayanad</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<footer>
+    Copyright @ 2024
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+main {
+    background-image: url(./images/hero-bg\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+ }
+
+.navbar{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        position: relative; 
+        flex-wrap: wrap; 
+        padding: 20px 15px;
+    }
+   
+.navbar-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    gap:20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-link a{
+    color: white;
+     text-decoration: none;
+    font-size: 16px;
+    display: block; 
+}
+.nav-link{
+    list-style-type: none;
+}
+.navbar-toggler {
+     background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-btn{
+    border: 2px solid  #0AAF4F;
+    background-color: rgba(0, 0, 0, 0);
+    padding:10px;
+    transition: background-color 1s ease;
+}
+
+.nav-btn:hover{
+    background-color:#0AAF4F;
+        
+}
+
+#hero-text h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+#hero-text {
+    
+    text-align: center;
+}
+
+
+.btn {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 18px;
+    display: inline-block;
+    border: 2px solid #0AAF4F;
+    background: none;
+    font-weight: 600;
+    transition: 0.5s ease background-color;
+}
+
+.btn:hover {
+    background-color: #0AAF4F;
+}
+
+.contact-btn  {
+    background-color: #0AAF4F;
+}
+
+.contact-btn:hover {
+    background: none;
+}
+
+.container{
+    max-width:1000px;
+    margin:0 auto;
+}
+.destinations {
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));
+    gap: 16px;
+    padding: 16px;
+}
+.destinations article {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.destinations article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+}
+.destinations article:hover{
+    cursor: pointer;
+    transform:scale(1.05);
+}
+.destinations article p {
+    margin: 0;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.districts{
+    margin-bottom: 20px;
+}
+footer {
+    text-align: center;
+    margin: 10px 0;
+}
+form {
+    display:flex;
+    align-items: center;
+    flex-direction: column;     
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px auto;  
+    width: max-content;
+    padding: 50px ;
+}
+form input {
+    padding :10px 50px 10px 10px; 
+    width: 100%;
+}
+.submit{
+    padding:10px 20px;
+    border-radius: 8px;
+    background-color: royalblue;
+    border: none;
+    color:white;
+}
+@media (max-width:780px) {
+    .districts {
+        text-align: center;
+    }
+
+    #hero-text h1 {
+        font-size: 8vw ;
+    }
+    #hero-text a {
+        font-size: 2vw ;
+    }
+}
+
+@media (max-width:600px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    form input {
+    padding :5px 25px 5px 5px; 
+}
+
+    form {
+        padding: 20px;
+    }
+}
+@media (max-width:400px) {
+    #hero-text {
+
+    }
+}
